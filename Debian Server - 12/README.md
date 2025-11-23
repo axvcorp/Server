@@ -430,12 +430,12 @@ net.ipv4.ip_forward=1
 ```
 sudo iptables -t nat -A POSTROUTING -o [NAT/bridge interface] -j MASQUERADE
 ```
-> Mengecek iptables:
+> Check table data of NAT rules:
 > ```
 > sudo iptables -t nat -nL
 > ```
 >
-> Menghapus data tabel NAT:
+> Delete table data of NAT rules:
 > ```
 > sudo iptables -t nat -D POSTROUTING [POSTROUTING data line]
 > ```
